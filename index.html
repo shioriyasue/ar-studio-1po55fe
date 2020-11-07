@@ -14,7 +14,7 @@
                     marker.addEventListener('markerFound', function () {
                         this.toggle = true;
                         this.vid.play();
-                        audio.play();
+                        this.audio.play();
                     }.bind(this));
 
                     marker.addEventListener('markerLost', function () {
@@ -48,7 +48,7 @@
                     <!-- muted -->
                     playsinline
                 ></video>
-                <audio src="videopath" autoplay></audio>
+                <audio src="videopath" id="audio" autoplay></audio>
             </a-assets>
 
             <a-marker
